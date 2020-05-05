@@ -1,13 +1,13 @@
 #!/bin/bash
 while true
 do
-    read -p "Enter email: " email
+    read -p "Enter mobile number: " mob
     echo
-    if [[ $email =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
+    if [[ $mob =~ ^^[0-9]{2}[[:space:]][0-9]{10}$ ]]
     then
-        echo "email $email is valid."
+        echo "mobile number is valid."
         break
     else
-        echo "email $email is invalid."
+        echo "mobile number is invalid."
     fi
 done
