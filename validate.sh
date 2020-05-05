@@ -1,13 +1,31 @@
-#!/bin/bash
-while true
-do
-    read -p "Enter mobile number: " mob
-    echo
-    if [[ $mob =~ ^^[0-9]{2}[[:space:]][0-9]{10}$ ]]
-    then
-        echo "mobile number is valid."
-        break
-    else
-        echo "mobile number is invalid."
-    fi
-done
+#! /bin/bash
+
+read -p "Enter password" password
+
+passpat1="^([a-zA-Z0-9@#!]){8}$";
+passpat2="^([a-z0-9@#!]*)[A-Z]+([a-z0-9@#!]*)$";
+passpat3="^[a-zA-Z@#!]*[0-9]+[a-zA-Z@#!]*$";
+passpat4="^([a-zA-Z0-9]*)[^a-zA-Z_0-9\s]([a-zA-Z0-9]*)$";
+if [[ $password =~ $passpat1   ]]
+then
+  if [[ $password =~ $passpat2  ]]
+  then
+     if [[ $password =~ $passpat3  ]]
+     then
+       if [[ $password =~ $passpat4  ]]
+       then
+        echo "Perfect password"
+       else
+         echo "Please enter at least one special char";
+        fi
+     else
+       echo "Please enter at least one digit";
+     fi
+  else
+    echo "Please enter at least one caps letter";
+  fi
+else
+  echo "Your password should be of 8 length";
+fi
+
+
