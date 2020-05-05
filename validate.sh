@@ -5,9 +5,9 @@ do
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
-        echo "Email $name is valid."
+        echo "name $name is valid."
         break
     else
-        echo "Email $name is invalid."
+        echo "name $name is invalid."
     fi
 done
