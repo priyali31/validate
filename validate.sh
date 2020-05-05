@@ -1,13 +1,13 @@
 #!/bin/bash
 while true
 do
-    read -p "Enter lastname: " name
+    read -p "Enter email: " email
     echo
-    if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
+    if [[ $email =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
     then
-        echo "lastname $name is valid."
+        echo "email $email is valid."
         break
     else
-        echo "lastname $name is invalid."
+        echo "email $email is invalid."
     fi
 done
