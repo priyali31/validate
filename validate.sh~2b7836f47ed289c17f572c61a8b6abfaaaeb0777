@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-=======
 #! /bin/bash
-while true
-do
-echo "welcome to user Registeration"
-    read -p "Enter username: " name
+   read -p "Enter username: " name
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
@@ -13,7 +8,7 @@ echo "welcome to user Registeration"
     else
         echo "name $name is invalid."
     fi
-
+    
     read -p "Enter lastname: " name
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
@@ -23,7 +18,7 @@ echo "welcome to user Registeration"
     else
         echo "lastname $name is invalid."
     fi
-
+    
     read -p "Enter email: " email
     echo
     if [[ $email =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
@@ -33,19 +28,16 @@ echo "welcome to user Registeration"
     else
         echo "email $email is invalid."
     fi
-
-
-
-    read -p "Enter mobile number: " mob
+    
+    read -p "Enter mobile number: " mobile
     echo
-    if [[ $mob =~ ^^[0-9]{2}[[:space:]][0-9]{10}$ ]]
+    if [[ $mobile =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
     then
-        echo "mobile number is valid."
+        echo "mobile number $mobile is valid."
         break
     else
-        echo "mobile number is invalid."
+        echo "mobile number $mobile is invalid."
     fi
-    
 
 read -p "Enter password" password
 
@@ -74,5 +66,5 @@ then
 else
   echo "Your password should be of 8 length";
 fi
-done
->>>>>>> d8db031407d11ae33f32a8f88b07fc1844de39b9
+
+
