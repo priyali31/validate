@@ -1,6 +1,7 @@
 #! /bin/bash
 while true
 do
+echo "welcome to user Registeration"
     read -p "Enter username: " name
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
