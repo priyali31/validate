@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 #! /bin/bash
 while true
 do
@@ -75,11 +74,4 @@ else
   echo "Your password should be of 8 length";
 fi
 done
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d8db031407d11ae33f32a8f88b07fc1844de39b9
->>>>>>> 60e2248026956e2ac53fa3e9f89d1c88a7f18e24
-=======
->>>>>>> d8db031407d11ae33f32a8f88b07fc1844de39b9
->>>>>>> 60e2248026956e2ac53fa3e9f89d1c88a7f18e24
+
