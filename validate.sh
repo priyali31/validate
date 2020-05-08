@@ -3,7 +3,7 @@ while true
 do
    read -p "Enter username: " fname
     echo
-    if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
+    if [[ $fname =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
         echo "name $fname is valid."
         break
@@ -13,7 +13,7 @@ do
     
     read -p "Enter lastname: " lname
     echo
-    if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
+    if [[ $lname =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
         echo "lastname $lname is valid."
             else
