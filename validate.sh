@@ -2,24 +2,22 @@
 #! /bin/bash
 while true
 do
-echo "welcome to user Registeration"
-    read -p "Enter username: " name
+echo "welcome"
+    read -p "Enter username: " fname
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
-        echo "name $name is valid."
-        break
-    else
-        echo "name $name is invalid."
+        echo "name $fname is valid."
+        else
+        echo "name $fname is invalid."
     fi
 
-    read -p "Enter lastname: " name
+    read -p "Enter lastname: " lname
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
-        echo "lastname $name is valid."
-        break
-    else
+        echo "lastname $lname is valid."
+           else
         echo "lastname $name is invalid."
     fi
 
@@ -28,8 +26,7 @@ echo "welcome to user Registeration"
     if [[ $email =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
     then
         echo "email $email is valid."
-        break
-    else
+           else
         echo "email $email is invalid."
     fi
 
@@ -40,8 +37,7 @@ echo "welcome to user Registeration"
     if [[ $mob =~ ^^[0-9]{2}[[:space:]][0-9]{10}$ ]]
     then
         echo "mobile number is valid."
-        break
-    else
+        else
         echo "mobile number is invalid."
     fi
     
