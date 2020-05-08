@@ -1,22 +1,23 @@
 #! /bin/bash
-   read -p "Enter username: " name
+while true
+do
+   read -p "Enter username: " fname
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
-        echo "name $name is valid."
+        echo "name $fname is valid."
         break
     else
         echo "name $name is invalid."
     fi
     
-    read -p "Enter lastname: " name
+    read -p "Enter lastname: " lname
     echo
     if [[ $name =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
-        echo "lastname $name is valid."
-        break
-    else
-        echo "lastname $name is invalid."
+        echo "lastname $lname is valid."
+            else
+        echo "lastname $lname is invalid."
     fi
     
     read -p "Enter email: " email
@@ -24,8 +25,7 @@
     if [[ $email =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
     then
         echo "email $email is valid."
-        break
-    else
+           else
         echo "email $email is invalid."
     fi
     
@@ -34,8 +34,7 @@
     if [[ $mobile =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
     then
         echo "mobile number $mobile is valid."
-        break
-    else
+          else
         echo "mobile number $mobile is invalid."
     fi
 
@@ -66,5 +65,5 @@ then
 else
   echo "Your password should be of 8 length";
 fi
-
+done
 
