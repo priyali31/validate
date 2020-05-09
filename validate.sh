@@ -32,12 +32,8 @@ echo "welcome"
 
            else
 
-    else
-
         echo "email $email is invalid."
     fi
-
-
 
     read -p "Enter mobile number: " mob
     echo
