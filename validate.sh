@@ -6,29 +6,29 @@ echo "welcome"
     echo
     if [[ $nfame =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
-        echo "name $fname is valid."
+        echo "name" $fname "is valid."
     else
-        echo "name $fname is invalid."
+        echo "name" $fname "is invalid."
     fi
  
     read -p "Enter lastname: " lname
     echo
     if [[ $lname =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
-        echo "lastname $lname is valid."
+        echo "lastname" $lname "is valid."
            else
-        echo "lastname $name is invalid."
+        echo "lastname" $name "is invalid."
     else
-        echo "lastname $lname is invalid."
+        echo "lastname" $lname "is invalid."
     fi
 
     read -p "Enter email: " email
     echo
     if [[ $email =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
     then
-        echo "email $email is valid."
+        echo "email" $email "is valid."
         else
-        echo "email $email is invalid."
+        echo "email" $email "is invalid."
     fi
 
     read -p "Enter mobile number: " mob
