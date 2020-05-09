@@ -16,12 +16,10 @@ echo "welcome"
     if [[ $lname =~ ^[?A-Z][a-z]{3,6}$ ]]
     then
         echo "lastname $lname is valid."
-
            else
         echo "lastname $name is invalid."
     else
         echo "lastname $lname is invalid."
-
     fi
 
     read -p "Enter email: " email
@@ -29,9 +27,7 @@ echo "welcome"
     if [[ $email =~ ^[a-zA-Z0-9.+]+@[a-z]+\.[a-z]{2,4}[.][a-z]{2}$ ]]
     then
         echo "email $email is valid."
-
-           else
-
+        else
         echo "email $email is invalid."
     fi
 
@@ -40,15 +36,10 @@ echo "welcome"
     if [[ $mob =~ ^^[0-9]{2}[[:space:]][0-9]{10}$ ]]
     then
         echo "mobile number is valid."
-
-        else
-
-    else
-
+         else
         echo "mobile number is invalid."
     fi
   
-
 read -p "Enter password" password
 
 passpat1="^([a-zA-Z0-9@#!]){8}$";
